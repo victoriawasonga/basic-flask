@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%block head%}
+{% endblock%}
+{%block body%}
+<div class="Content">
+    <h1 class="font-weight-bold" style="text-align:center">UPDATE TASK MASTER</h1>
+    <br/>
+    <form action="/update/{{task.id}}" method="post">
+      <div class="form-group">
+       <label for="exampleInputEmail1">Content:</label>
+       <input type="text" name="content" id="content" class="form-control" aria-describedby="contentHelp" value=" {{task.content}}">
+       </div>
+
+      <input type="submit" class="btn btn-primary" value="Update Task">
+    </form>
+    <br/>
+    <br/>
+
+</div>
+{% endblock%}
